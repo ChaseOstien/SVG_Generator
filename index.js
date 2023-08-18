@@ -10,10 +10,10 @@ const questions = [
         message: 'Enter your desired text(3 characters or less).',
         name: 'text',
         validate: (value) => { 
-            if (value <= 3) {
-                return true;
-            } else { 
+            if (value > 3) {
                 return 'Enter no more then 3 characters!';
+            } else { 
+                return true;
             }
         },
     },
@@ -33,7 +33,7 @@ const questions = [
         type: 'list',
         message: 'What shape would you like to use?',
         name: 'shape',
-        choices: ['Circle', 'Triangle', 'square'],
+        choices: ['Circle', 'Triangle', 'Square'],
         validate: (value) => { 
             if (value) {
                 return true;
@@ -67,3 +67,15 @@ function writeToFile(fileName, data) {
         console.log('Generated logo.svg!');
     })
 }
+
+
+function init() {
+    inquirer.prompt(questions).then((answers) => {
+        const generatedContent = generateShapes(answers);
+        writeToFile(filePath, generatedContent);
+    });
+}
+
+init();
+
+module.expors = questions;
