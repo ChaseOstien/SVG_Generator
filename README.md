@@ -1,4 +1,4 @@
-# SVG Logo Generator ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)';
+# SVG Logo Generator ![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)
 
 ## Table of Contents
 * [Description](#description)
@@ -16,7 +16,7 @@ To install this application, create a directory in which you will develop your a
 ## Usage
 To use this application, make sure you have followed all installation instructions and installed `inquirer: ^8.2.4` and `jest: ^24.9.0`. Verify that your main JS file is listed under "main" in your `package.json` file. Navigate to the directory containing your main JS file and run it using the command `node (filename).js`. Answer the generated prompts and enter your desired text. Once all prompts have been answered, your file will automatically be generated in your directory. You can then publish this file to your remote GitHub repository or export it for use in another project. 
 #### Example of command line prompts for this application.
-![Screenshot of command line prompts.](./assets/img/promptScreenshot.png);
+![Screenshot of command line prompts.](./assets/img/promptScreenshot.png)
 
 #### Video recording of program flow and output. 
 
