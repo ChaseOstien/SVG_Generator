@@ -1,0 +1,9 @@
+<svg version="1.1"
+        width="300px" height="200px"
+        xmlns="http://www.w3.org/2000/svg">
+
+    <polygon points="150,20 60,170 240,170" fill="gold" />
+
+    <text x="150" y="150" font-size="50" text-anchor="middle" fill="blue">DEV</text>
+
+    </svg>
